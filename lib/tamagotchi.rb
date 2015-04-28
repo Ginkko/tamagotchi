@@ -41,4 +41,9 @@ class Tamagotchi
     @@health += 50
   end
 
+  define_method(:heal) do
+    @@sick = false
+  end
+
+
 end

@@ -44,4 +44,11 @@ describe(Tamagotchi) do
     end
   end
 
+  describe('#heal') do
+    it('resets sickness to healthy') do
+      player_tama = Tamagotchi.new('Gonzo')
+      player_tama.heal()
+      expect(player_tama.sick?()).to(eq(false))
+    end
+  end
 end
