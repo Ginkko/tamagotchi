@@ -45,5 +45,8 @@ class Tamagotchi
     @@sick = false
   end
 
+  def play
+    @@happy += 50
+  end
 
 end
