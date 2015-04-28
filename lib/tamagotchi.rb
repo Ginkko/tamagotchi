@@ -37,4 +37,8 @@ class Tamagotchi
     @@happy -= 10
   end
 
+  define_method(:feed) do
+    @@health += 50
+  end
+
 end

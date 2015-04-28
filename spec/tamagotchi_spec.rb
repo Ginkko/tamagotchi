@@ -35,4 +35,13 @@ describe(Tamagotchi) do
       expect(player_tama.happy()).to(eq(90))
     end
   end
+
+  describe('#feed') do
+    it('increases health') do
+      player_tama = Tamagotchi.new('Gonzo')
+      player_tama.feed()
+      expect(player_tama.health()).to(eq(150))
+    end
+  end
+
 end
