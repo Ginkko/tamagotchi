@@ -1,0 +1,25 @@
+<h1> Tamagotchi! </h1>
+<p> Name:<%= @tama_name %></p>
+<p> Status: </p>
+<ul>
+  <li>Health:</li>
+  <li>Happiness:</li>
+  <li>Illness:</li>
+</ul>
+
+<form action='/pass_time' method='post'>
+  <div class='form-group'>
+    <form>
+      <label for='activity'>Choose your activity:</label>
+      <br>
+      <input type='radio' name='activity' value='Nothing' checked>Nothing
+      <br>
+      <input type='radio' name='activity' value='Feed'>Feed
+      <br>
+      <input type='radio' name='activity' value='Play'>Play
+      <br>
+      <input type='radio' name='activity' value='Medicine'>Medicine
+    </form>
+  </div>
+  <button class='btn btn-success' id='pass_time' type='submit'>Do Activity!</button>
+</form>
