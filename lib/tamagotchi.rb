@@ -14,4 +14,17 @@ class Tamagotchi
     @name
   end
 
+  define_method(:health) do
+    @@health
+  end
+
+  define_method(:happy) do
+    @@happy
+  end
+
+  define_method(:sick?) do
+    @@sick
+  end
+
+
 end

@@ -7,9 +7,9 @@ describe(Tamagotchi) do
     it('populataes new Tamagotchi with starting values') do
       player_tama = Tamagotchi.new('Gonzo')
       expect(player_tama.name()).to(eq('Gonzo'))
-    #  expect(player_tama.health()).to(eq(100))
-    #  expect(player_tama.happy()).to(eq(100))
-    #  expect(player_tama.sick()).to(eq(false))
+      expect(player_tama.health()).to(eq(100))
+      expect(player_tama.happy()).to(eq(100))
+      expect(player_tama.sick?()).to(eq(false))
     end
   end
 
