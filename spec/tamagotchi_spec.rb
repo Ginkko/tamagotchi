@@ -27,6 +27,12 @@ describe(Tamagotchi) do
       player_tama.pass_time()
       expect(player_tama.time()).to(eq(1))
     end
-  end
 
+    it('reduce health and happy') do
+      player_tama = Tamagotchi.new('Gonzo')
+      player_tama.pass_time()
+      expect(player_tama.health()).to(eq(90))
+      expect(player_tama.happy()).to(eq(90))
+    end
+  end
 end

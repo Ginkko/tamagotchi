@@ -33,6 +33,8 @@ class Tamagotchi
 
   define_method(:pass_time) do
     @@time += 1
+    @@health -= 10
+    @@happy -= 10
   end
 
 end
